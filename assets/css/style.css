@@ -99,6 +99,34 @@ section h2 {
     box-shadow: 0 4px 6px black;
 }
 
+/* booking section */
+
+#booking form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto 40px;
+    gap: 15px;
+}
+
+#booking input, #booking button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#booking button {
+    background-color: #d4a930;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 /* footer */
 
 footer {

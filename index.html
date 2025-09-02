@@ -2,7 +2,7 @@
 <html lang="sv">
 <!-- 
 git add .
-git commit -m "complete static webpage excluding booking-section-design"
+git commit -m "adding a booking section"
 git push
 -->
 <head>
@@ -49,6 +49,27 @@ git push
     </section>
 
     <section id="booking">
+        <h2>book a table</h2>
+
+        <form id="booking-form">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="guests">number of guests</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <button type="submit">book Now</button>
+        </form>
+
+        <div id="calendar">
+            <div></div>
+            <div class="calendar-grid"></div>
+        </div>
+
+        <div id="confirmation-message"></div>
     </section>
 
     <footer>
