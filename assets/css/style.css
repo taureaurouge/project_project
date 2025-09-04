@@ -126,6 +126,47 @@ section h2 {
     font-weight: bold;
 }
 
+/* booking section => functional calendar */
+
+#calendar {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.slot {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.slot.unavailable {
+    background-color: #ada8a8;
+    cursor: not-allowed;
+}
+
+.slot.selected {
+    background-color: #d4a930;
+    color: white;
+}
+
+
 /* footer */
 
 footer {
