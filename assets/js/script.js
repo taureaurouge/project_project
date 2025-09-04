@@ -6,7 +6,10 @@
 
 
 // function selectSlot()
-
+// - if slot is available
+//  - remove "selected" from previously chosen slot
+//  - add "selected" to current slot
+//  - update selectSlot variable
 
 
 // function handleSubmit
