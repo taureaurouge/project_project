@@ -1,4 +1,9 @@
 
+
+// defining selectedslot aswell as giving it a defualt value
+
+let selectedSlot = null;
+
 // function genereateCalendar()
 
 function generateCalendar() {
@@ -34,10 +39,20 @@ function generateCalendar() {
 
 
 // function selectSlot()
+function selectSlot(slot) {
+
 // - if slot is available
 //  - remove "selected" from previously chosen slot
 //  - add "selected" to current slot
 //  - update selectSlot variable
+    if (slot.classList.contains("unavailable")) return;
+
+    if (selectedSlot) {
+        selectedSlot.classList.remove("selected");
+    }
+    slot.classList.add("selected");
+    selectedSlot = slot;
+}
 
 
 // function handleSubmit()
