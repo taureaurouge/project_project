@@ -2,7 +2,7 @@
 <html lang="sv">
 <!-- 
 git add .
-git commit -m "adding a booking section"
+git commit -m "create a js-script and adding pseudo-code for an interactive calendar grid within the booking section"
 git push
 -->
 <head>
@@ -59,13 +59,13 @@ git push
             <input type="email" id="email" name="email" required>
 
             <label for="guests">number of guests</label>
-            <input type="number" id="guests" name="guests" required>
+            <input type="number" id="guests" name="guests" min="1" required>
 
             <button type="submit">book Now</button>
         </form>
 
         <div id="calendar">
-            <div></div>
+            <div class="calendar-header"></div>
             <div class="calendar-grid"></div>
         </div>
 
@@ -75,6 +75,6 @@ git push
     <footer>
         <p>all rights reserved for bread restaurant 2025</p>
     </footer>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
