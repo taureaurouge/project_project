@@ -12,4 +12,6 @@
 //  - update selectSlot variable
 
 
-// function handleSubmit
+// function handleSubmit()
+// - prevent default form submission
+// - show confirmation message
